@@ -16,17 +16,7 @@ class Document extends NextDocument {
   render() {
     return (
       <Html lang="en">
-        <Head>
-          <meta charSet="utf-8" />
-          <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap"
-            rel="stylesheet"
-          />
-        </Head>
+        <Head></Head>
         <body className="min-h-screen">
           <script
             dangerouslySetInnerHTML={{

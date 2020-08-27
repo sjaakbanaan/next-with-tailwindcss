@@ -4,7 +4,14 @@
 
 #nprogress .bar {
   @apply bg-primary;
-  @apply fixed top-0 left-0;
+  @apply fixed;
+  @apply top-0;
+  @apply left-0;
   @apply z-50;
-  @apply w-full h-1;
+  @apply w-full;
+  @apply h-1;
+}
+
+body.dark-mode #nprogress .bar {  
+  @apply bg-white;
 }

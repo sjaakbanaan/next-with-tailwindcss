@@ -27,7 +27,7 @@ const Text: React.FC<Props> = ({
   bold = false,
 }) => {
   const sharedStyles = 'text-gray-700 dark:text-gray-300'
-  const headerStyles = 'text-gray-900 dark:text-gray-100 font-black'
+  const headerStyles = 'text-gray-900 dark:text-gray-100 font-bold'
 
   if (h1) {
     return (

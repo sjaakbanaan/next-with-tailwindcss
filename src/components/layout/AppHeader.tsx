@@ -28,40 +28,30 @@ const AppHeader: React.FC<Props> = ({ className }) => {
         <Link {...routes.INDEX}>
           <a
             title="home"
-            className="flex-grow text-xl font-black text-black dark:text-white dark:hover:text-black"
+            className="flex-grow text-xl font-bold text-black dark:text-white dark:hover:text-black"
           >
-            My Project
+            BJ Brews
           </a>
         </Link>
       </div>
-      <div>
-        <Dropdown buttonLabel={<FiMoreHorizontal />}>
-          <ul className="w-40 space-y-4 py-2 text-sm">
-            <li>
-              <Link {...routes.COMPONENTS}>
-                <a className="text-primary hover:underline" title="components">
-                  <MdFeaturedPlayList className="inline mr-2" />
-                  Components
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link {...routes.TYPOGRAPHY}>
-                <a className="text-primary hover:underline" title="Typography">
-                  <AiOutlineFontColors className="inline mr-2" />
-                  Typography
-                </a>
-              </Link>
-            </li>
-            <li>
-              <hr className="dark:border-gray-700" />
-            </li>
-            <li className="flex items-center justify-between">
-              <span className="mr-auto text-gray-600">Theme</span>
-              <ThemeSwitch />
-            </li>
-          </ul>
-        </Dropdown>
+      <div className="flex items-center">        
+        <ul className="py-2 text-sm flex items-center">
+          <li className="mr-3">
+            <Link {...routes.COMPONENTS}>
+              <a className="dark:text-gray-100 hover:underline" title="components">
+                Beers
+              </a>
+            </Link>
+          </li>
+          <li className="mr-3">
+            <Link {...routes.TYPOGRAPHY}>
+              <a className="dark:text-gray-100 hover:underline" title="Typography">
+                Philosophy
+              </a>
+            </Link>
+          </li>            
+        </ul>
+        <ThemeSwitch />
       </div>
     </header>
   )

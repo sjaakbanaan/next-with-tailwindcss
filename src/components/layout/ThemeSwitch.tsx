@@ -4,7 +4,7 @@ import { FiMoon, FiSun } from 'react-icons/fi'
 import useDarkMode from 'use-dark-mode'
 
 const MODE_TRANSITION_CLASS_NAME = 'dark-mode-transition'
-const MODE_TRANSITION_DURATION = 500
+const MODE_TRANSITION_DURATION = 0
 
 function setDarkModeTransition() {
   document.documentElement.classList.add(MODE_TRANSITION_CLASS_NAME)
@@ -32,7 +32,7 @@ const ThemeSwitch: React.FC = () => {
       offColor="#f7fafc"
       onHandleColor="#f7fafc"
       offHandleColor="#1a202c"
-      className="text-gray-900 dark:text-gray-100 border border-gray-400 dark:border-0"
+      className="text-gray-900 dark:text-gray-100 border border-gray-400 dark:border-gray-800 shadow-none"
     />
   )
 }

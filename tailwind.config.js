@@ -7,8 +7,8 @@ module.exports = {
       padding: '1rem',
     },
     fontFamily: {
-      header: ['Open Sans', 'sans-serif'],
-      body: ['Open Sans', 'sans-serif'],
+      header: ['Roboto Condensed', 'Open Sans', 'sans-serif'],
+      body: ['Roboto Condensed', 'Open Sans', 'sans-serif'],
     },
     extend: {
       colors: {
@@ -22,6 +22,17 @@ module.exports = {
           default: '#4299E1',
           darker: '#3182CE',
         },
+        gray: {
+          '100': '#f5f5f5',
+          '200': '#eeeeee',
+          '300': '#e0e0e0',
+          '400': '#bdbdbd',
+          '500': '#9e9e9e',
+          '600': '#757575',
+          '700': '#616161',
+          '800': '#424242',
+          '900': '#212121',
+        }
       },
     },
   },
